@@ -1,0 +1,220 @@
+%-------------------------
+% Resume in Latex
+% Author : Axel Greavette
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Axel Greavette} \\ \vspace{1pt}
+    \small \href{mailto:a@axel.gg}{\underline{a@axel.gg}} $|$ 
+    \href{https://linkedin.com/in/greavette}{\underline{linkedin.com/in/greavette}} $|$
+    \href{https://github.com/greavettey}{\underline{github.com/greavettey}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carleton University}{Ottawa, ON}
+      {Bachelor of Electrical Engineering, Minor in Physics}{Sept. 2023 -- Apr. 2028}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+
+\section{Experience}
+
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Yard Manager}{Apr. 2023 -- Aug. 2025}
+      {Northern Rock}{Gravenhurst, ON}
+      \resumeItemListStart
+        \resumeItem{Assembled orders, managed existing inventory, and communicated extensively with customers}
+        \resumeItem{Operated heavy equipment and machinery, including forklifts, Zoom-Booms, HINOs, and John Deere front-end loader}
+        \resumeItem{Processed payments, refunds, installments, and orders with a complete POS and inventory service}
+        \resumeItem{Was entrusted with running the business by myself, delegating deliveries, orders, and tasks to other employees}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Information Technology Assistant}{Sept. 2022 -- Feb. 2023}
+      {Trillium Lakelands District School Board}{Bracebridge, ON}
+      \resumeItemListStart
+        \resumeItem{Aid in setup and deployment of board-issued laptops and equipment}
+        \resumeItem{Troubleshoot computer problems brought by students, faculty and staff}
+        \resumeItem{Maintain upkeep of computers and classroom equipment across local schools}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Greens Crew}{June 2022 -- Oct. 2022}
+      {Taboo Muskoka}{Gravenhurst, ON}
+      \resumeItemListStart
+        \resumeItem{Operated machinery for use in golf-course and resort maintenance}
+        \resumeItem{Took on roles doing odd-jobs and other necessary tasks for the betterment of the course and resort}
+    \resumeItemListEnd
+      
+     \resumeSubheading
+      {Jr. Manager}{June 2020 -- Apr. 2022}
+      {Harvey's Serving Swiss Chalet}{Gravenhurst, ON}
+      \resumeItemListStart
+        \resumeItem{Took on roles as cashier, garnisher, cook, and server when needed}
+        \resumeItem{Operated as front of house manager, organizing staff and ensuring optimal functioning}
+    \resumeItemListEnd
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Payment Tracker} $|$ \emph{Swift, Firebase, Objective C}}{Dec. 2021 -- June 2022}
+          \resumeItemListStart
+            \resumeItem{Developed a full iOS app, allowing users to easily track and maintain reminders for upcoming subscriptions, bills, sales, and other payments}
+            \resumeItem{Implemented account systems supporting email and Google OAUTH-based signup and login, ensuring data could be saved and moved between devices}
+            \resumeItem{Implemented complex notification systems, allowing users to set reminders of upcoming transactions}
+            \resumeItem{Used SwiftUI to ensure beautiful and consistent user experience across devices}
+            \resumeItem{Made publicly available on both the iOS App Store and Github}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: TypeScript, Java, Python, C/C++, SQL, JavaScript, HTML/CSS} \\
+     \textbf{Frameworks}{: Node.js, Next.js, JUnit, WordPress, SwiftUI, ExpressJS } \\
+     \textbf{Developer Tools}{: Git, Docker, Kubernetes, Firebase, VS Code, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Industry Tools}{: Matlab, KiCad, AutoCad, Fusion360}
+    }}
+ \end{itemize}
+ 
+\section{Other Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Certifications}{: Heavy Equipment Operator, Working at Heights, Smart Serve, G license}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
